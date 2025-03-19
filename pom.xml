@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.tyr</groupId>
-    <artifactId>TyrOverworld</artifactId>
+    <artifactId>Tyr</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Tyr Overworld</name>
-    <description>Tyr1</description>
+    <name>Tyr</name>
+    <description>Tyr Local Test</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -25,13 +25,9 @@
         <!-- Spring Boot Starter Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
 
         <!-- Spring Boot Starter Data JPA -->
         <dependency>
@@ -43,7 +39,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <version>8.0.27</version>
         </dependency>
 
         <!-- Spring Boot Starter Test (for testing) -->
