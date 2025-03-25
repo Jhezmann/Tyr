@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tyr-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tyr
+  template:
+    metadata:
+      labels:
+        app: tyr
+    spec:
+      containers:
+        - name: tyr
+          image: your-docker-repo/tyr:latest
+          ports:
+            - containerPort: 8080
